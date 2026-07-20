@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node api/index.js",
     "start": "node api/index.js",
-    "seed:admin": "node api/seeders/create-admin.js"
+    "seed:admin": "node server/seeders/create-admin.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

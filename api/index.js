@@ -3,13 +3,13 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 
-const ensureDatabase = require("./middlewares/database.middleware");
-const requireAdmin = require("./middlewares/auth.middleware");
-const publicRoutes = require("./routes/public.routes");
-const authRoutes = require("./routes/auth.routes");
-const productRoutes = require("./routes/product.routes");
-const categoryRoutes = require("./routes/category.routes");
-const uploadRoutes = require("./routes/upload.routes");
+const ensureDatabase = require("../server/middlewares/database.middleware");
+const requireAdmin = require("../server/middlewares/auth.middleware");
+const publicRoutes = require("../server/routes/public.routes");
+const authRoutes = require("../server/routes/auth.routes");
+const productRoutes = require("../server/routes/product.routes");
+const categoryRoutes = require("../server/routes/category.routes");
+const uploadRoutes = require("../server/routes/upload.routes");
 
 const app = express();
 
