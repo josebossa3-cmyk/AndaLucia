@@ -31,14 +31,3 @@ El proyecto completo incluye:
 - [Deploy en Vercel](docs/deploy-vercel.md)
 
 ## Seguridad
-
-No subir credenciales reales al repositorio.
-
-Archivos y valores privados:
-
-- `.env`
-- `DATABASE_URL`
-- `JWT_SECRET`
-- `CLOUDINARY_API_SECRET`
-
-Si el API Secret de Cloudinary fue compartido en una captura o chat, debe regenerarse antes de produccion.
