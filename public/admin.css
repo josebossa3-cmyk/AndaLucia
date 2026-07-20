@@ -1,0 +1,67 @@
+:root {
+  --admin-bg: #f7f1e6;
+  --admin-card: #fffaf1;
+  --admin-ink: #241b14;
+  --admin-muted: #75685b;
+  --admin-line: rgba(83, 61, 34, 0.16);
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #fffaf1, var(--admin-bg));
+  color: var(--admin-ink);
+}
+
+.admin-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.login-card,
+.panel-card {
+  border: 1px solid var(--admin-line);
+  border-radius: 24px;
+  background: rgba(255, 250, 241, 0.86);
+  box-shadow: 0 24px 70px rgba(68, 45, 23, 0.11);
+}
+
+.login-card {
+  max-width: 420px;
+  margin: 10vh auto 0;
+  padding: 32px;
+}
+
+.panel-card {
+  padding: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.product-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  object-fit: cover;
+  background: #eadfca;
+}
+
+.empty-thumb {
+  display: grid;
+  place-items: center;
+  color: var(--admin-muted);
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
