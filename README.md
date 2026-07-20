@@ -15,8 +15,8 @@ Landing y catalogo administrable para la marca de joyeria Andalucia.
 
 El proyecto completo incluye:
 
-- Landing publica en `public/index.html`.
-- Panel admin en `public/admin.html`.
+- Landing publica en `index.html`.
+- Panel admin en `admin.html`.
 - API REST con Express en `api/`.
 - Base de datos PostgreSQL en Neon con Sequelize.
 - Subida de imagenes a Cloudinary.

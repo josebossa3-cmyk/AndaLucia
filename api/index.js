@@ -28,10 +28,10 @@ app.use((error, req, res, next) => {
 });
 
 if (process.env.VERCEL !== "1") {
-  const publicDir = path.join(__dirname, "..", "public");
-  app.use(express.static(publicDir));
-  app.get("/admin", (req, res) => res.sendFile(path.join(publicDir, "admin.html")));
-  app.get("*", (req, res) => res.sendFile(path.join(publicDir, "index.html")));
+  const staticDir = path.join(__dirname, "..");
+  app.use(express.static(staticDir));
+  app.get("/admin", (req, res) => res.sendFile(path.join(staticDir, "admin.html")));
+  app.get("*", (req, res) => res.sendFile(path.join(staticDir, "index.html")));
 
   const port = Number(process.env.PORT || process.env.SERVER_PORT || 3000);
   app.listen(port, () => {

@@ -128,13 +128,12 @@ andalucia-joyeria/
 │   ├── utils/
 │   │   └── slugify.js
 │   └── index.js
-├── public/
-│   ├── admin.css
-│   ├── admin.html
-│   ├── admin.js
-│   ├── index.html
-│   ├── script.js
-│   └── styles.css
+├── admin.css
+├── admin.html
+├── admin.js
+├── index.html
+├── script.js
+├── styles.css
 ├── docs/
 │   ├── base-de-datos.md
 │   ├── cloudinary.md
