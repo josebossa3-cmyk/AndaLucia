@@ -33,7 +33,7 @@ if (process.env.VERCEL !== "1") {
   app.get("/admin", (req, res) => res.sendFile(path.join(publicDir, "admin.html")));
   app.get("*", (req, res) => res.sendFile(path.join(publicDir, "index.html")));
 
-  const port = Number(process.env.PORT || 3000);
+  const port = Number(process.env.PORT || process.env.SERVER_PORT || 3000);
   app.listen(port, () => {
     console.log(`Andalucia Joyeria corriendo en http://localhost:${port}`);
   });

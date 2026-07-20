@@ -21,7 +21,8 @@ async function initializeDatabase() {
   await sequelize.authenticate();
 
   if (process.env.DB_SYNC === "true") {
-    await sequelize.sync({ alter: process.env.DB_SYNC_ALTER === "true" });
+    // Solo crea las tablas que falten. Si ya existen, no modifica nada.
+    await sequelize.sync();
   }
 }
 

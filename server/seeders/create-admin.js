@@ -11,7 +11,7 @@ async function createAdmin() {
   }
 
   await initializeDatabase();
-  await sequelize.sync({ alter: true });
+  await sequelize.sync();
 
   const passwordHash = await bcrypt.hash(ADMIN_PASSWORD, 12);
   const [admin, created] = await AdminUser.findOrCreate({
