@@ -1,4 +1,5 @@
 const { Sequelize } = require("sequelize");
+const pg = require("pg");
 require("dotenv").config();
 
 let databaseUrl = process.env.DATABASE_URL;
@@ -21,6 +22,7 @@ if (!databaseUrl) {
 
 const sequelize = new Sequelize(databaseUrl || "postgres://missing:missing@localhost:5432/missing", {
   dialect: "postgres",
+  dialectModule: pg,
   logging: process.env.NODE_ENV === "production" ? false : false,
   dialectOptions: {
     ssl:
