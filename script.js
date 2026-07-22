@@ -1,56 +1,6 @@
 const whatsappNumber = "5492664964989";
 
-const fallbackProducts = [
-  {
-    name: "Anillo Aurora",
-    category: "Anillo",
-    price: 45000,
-    image:
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85",
-    isFeatured: true,
-  },
-  {
-    name: "Collar Marfil",
-    category: "Collar",
-    price: 62000,
-    image:
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85",
-    isFeatured: true,
-  },
-  {
-    name: "Aros Lucia",
-    category: "Aros",
-    price: 38000,
-    image:
-      "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=85",
-    isFeatured: true,
-  },
-  {
-    name: "Pulsera Alba",
-    category: "Pulsera",
-    price: 41000,
-    image:
-      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85",
-    isFeatured: true,
-  },
-  {
-    name: "Anillo Serena",
-    category: "Anillo",
-    price: 58000,
-    image:
-      "https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&w=900&q=85",
-    isFeatured: true,
-  },
-  {
-    name: "Collar Andalucia",
-    category: "Collar",
-    price: 75000,
-    image:
-      "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=900&q=85",
-    isFeatured: true,
-  },
-];
-
+const fallbackProducts = [];
 const currencyFormatter = new Intl.NumberFormat("es-AR", {
   style: "currency",
   currency: "ARS",
